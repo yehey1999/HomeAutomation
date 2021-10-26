@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="false"
+    android:animationCache="false"
+    android:background="@drawable/hb"
+    android:orientation="vertical"
+    tools:animationCache="false"
+    tools:context="com.exclikers.homeautomationsystem.HomeScreen">
+
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="167dp"
+        android:background="@drawable/start"
+        android:onClick="homeClickButton" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="23dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginRight="42dp"
+        android:background="@drawable/exit"
+        android:onClick="exitClickButton" />
+
+    <Button
+        android:id="@+id/btnHelp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp"
+        android:background="@drawable/help"
+        android:onClick="btnhelp" />
+
+    <Button
+        android:id="@+id/btnremote"
+        android:layout_width="200dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/btnStart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/remote"
+        android:visibility="gone" />
+
+</RelativeLayout>

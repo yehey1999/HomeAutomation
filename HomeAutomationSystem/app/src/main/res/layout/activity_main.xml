@@ -1,0 +1,1481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgwhte"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context="com.exclikers.homeautomationsystem.MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/remotescreen"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <ListView
+            android:id="@+id/add_list"
+            android:layout_width="500dp"
+            android:layout_height="450dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.401" />
+
+        <Button
+            android:id="@+id/remotebtnadd"
+            android:layout_width="88dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/add"
+            android:onClick="remoteaddbtn"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <!--AIRCON BUTTONS-->
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/AIRCONbuttons"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/airconfc"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+                android:onClick="airconbtnfc"
+                android:layout_marginTop="218dp"
+                android:background="@android:color/holo_green_dark"
+
+                android:text="F/C"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.478"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/airconfan"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+                android:onClick="airconbtnfan"
+                android:layout_marginTop="218dp"
+                android:background="@android:color/holo_green_dark"
+
+                android:text="fan"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.649"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/airconmode"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+                android:onClick="airconbtnmode"
+                android:layout_marginTop="218dp"
+                android:background="@android:color/holo_green_dark"
+
+                android:text="mode"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.307"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/aircontempdown"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+
+                android:layout_marginTop="278dp"
+                android:background="@android:color/holo_green_dark"
+                android:onClick="airconbtntempdown"
+                android:text="TEMP DOWN"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.478"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/aircontempup"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+
+                android:layout_marginTop="158dp"
+                android:background="@android:color/holo_green_dark"
+                android:onClick="airconbtntempup"
+                android:text="TEMP UP"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.479"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/airconpower"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="67dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="67dp"
+                android:layout_marginTop="84dp"
+                android:onClick="airconbtnpower"
+                android:background="@drawable/power"
+                app:layout_constraintHorizontal_bias="0.101"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+
+        <!--PROJECTOR BUTTONS-->
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/PROJECTORbuttons"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/projpower"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="67dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="67dp"
+                android:layout_marginTop="84dp"
+                android:background="@drawable/power"
+                android:onClick="projbtnpower"
+                app:layout_constraintHorizontal_bias="0.101"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/profinput"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="67dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="67dp"
+                android:layout_marginTop="84dp"
+                android:onClick="projbtninput"
+                android:background="@drawable/rminput"
+                app:layout_constraintHorizontal_bias="0.568"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/projup"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+                android:onClick="projbtnup"
+                android:layout_marginTop="171dp"
+                android:background="?attr/actionModeSplitBackground"
+
+                android:text="▲"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.461"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/projright"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+                android:onClick="projbtnright"
+                android:layout_marginTop="231dp"
+                android:background="?attr/actionModeSplitBackground"
+
+                android:text="►"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.632"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/projexit"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+                android:onClick="projbtnexit"
+                android:layout_marginTop="364dp"
+                android:background="?android:attr/colorFocusedHighlight"
+
+                android:text="EXIT"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.632"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/projdown"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+                android:onClick="projbtndown"
+                android:layout_marginTop="291dp"
+                android:background="?attr/actionModeSplitBackground"
+
+                android:text="▼"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.461"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/projleft"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+
+                android:layout_marginLeft="67dp"
+                android:onClick="projbtnleft"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="67dp"
+                android:layout_marginTop="231dp"
+                android:background="?attr/actionModeSplitBackground"
+                android:text="◄"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.121"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/projmenu"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+
+                android:layout_marginLeft="67dp"
+                android:onClick="projbtnmenu"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="67dp"
+                android:layout_marginTop="364dp"
+                android:background="?android:attr/colorFocusedHighlight"
+                android:text="Menu"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.133"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/projok"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+
+                android:layout_marginTop="231dp"
+                android:background="?attr/actionModeSplitBackground"
+                android:onClick="projbtnok"
+                android:text="OK"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.461"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+
+
+
+
+
+        <!--TV BUTTONS-->
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/TVbuttons"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/btnchup"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="258dp"
+                android:layout_marginStart="258dp"
+                android:layout_marginTop="129dp"
+                android:background="@drawable/rmchup"
+                android:onClick="tvbtnchup"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnmenu"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="326dp"
+                android:background="@drawable/rmmenu"
+                android:onClick="tvbtnmenu"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btninput"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="258dp"
+                android:layout_marginStart="258dp"
+                android:layout_marginTop="56dp"
+                android:background="@drawable/rminput"
+                android:onClick="tvbtninput"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnvoldown"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="258dp"
+                android:layout_marginStart="258dp"
+                android:layout_marginTop="326dp"
+                android:background="@drawable/voldown"
+                android:onClick="tvbtnvoldown"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnchdown"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="258dp"
+                android:layout_marginStart="258dp"
+                android:layout_marginTop="197dp"
+                android:background="@drawable/rmchdown"
+                android:onClick="tvbtnchdown"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnvolup"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="258dp"
+                android:layout_marginStart="258dp"
+                android:layout_marginTop="261dp"
+                android:background="@drawable/volup"
+                android:onClick="tvbtnvolup"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="107dp"
+                android:layout_marginStart="107dp"
+                android:layout_marginTop="261dp"
+                android:background="@drawable/black8"
+                android:onClick="tvbtn8"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="107dp"
+                android:layout_marginStart="107dp"
+                android:layout_marginTop="197dp"
+                android:background="@drawable/black5"
+                android:onClick="tvbtn5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/black4"
+                android:onClick="tvbtn4"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn1" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="184dp"
+                android:layout_marginStart="184dp"
+                android:layout_marginTop="197dp"
+                android:background="@drawable/black6"
+                android:onClick="tvbtn6"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="107dp"
+                android:layout_marginStart="107dp"
+                android:layout_marginTop="129dp"
+                android:background="@drawable/black2"
+                android:onClick="tvbtn2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/black1"
+                android:onClick="tvbtn1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnpower" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="184dp"
+                android:layout_marginStart="184dp"
+                android:layout_marginTop="129dp"
+                android:background="@drawable/black3"
+                android:onClick="tvbtn3"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="184dp"
+                android:layout_marginStart="184dp"
+                android:layout_marginTop="261dp"
+                android:background="@drawable/black9"
+                android:onClick="tvbtn9"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="107dp"
+                android:layout_marginStart="107dp"
+                android:layout_marginTop="326dp"
+                android:background="@drawable/black0"
+                android:onClick="tvbtn0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnmute"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="184dp"
+                android:layout_marginStart="184dp"
+                android:layout_marginTop="326dp"
+                android:background="@drawable/rmmute"
+                android:onClick="tvbtnmute"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/black7"
+                android:onClick="tvbtn7"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn4" />
+
+            <Button
+                android:id="@+id/btnpower"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="56dp"
+                android:background="@drawable/power"
+                android:onClick="tvbtnpower"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Remote Controls"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:text="_________________________________"
+            android:textColor="?attr/colorAccent"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ListView
+            android:id="@+id/remote_list"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.401" />
+
+        <!--DVD BUTTONS-->
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/DVDbuttons"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <Button
+                android:id="@+id/dvdeject"
+                android:layout_width="88dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="223dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/eject"
+                android:onClick="dvdeject"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="223dp" />
+
+            <Button
+                android:id="@+id/dvdbtn3"
+                android:layout_width="88dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="172dp"
+                android:layout_marginTop="99dp"
+                android:background="@drawable/black3"
+                android:onClick="dvdbtn3"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="172dp" />
+
+            <Button
+                android:id="@+id/dvdvolup"
+                android:layout_width="88dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="223dp"
+                android:layout_marginTop="99dp"
+                android:background="@drawable/volup"
+                android:onClick="dvdvolup"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="223dp" />
+
+            <Button
+                android:id="@+id/dvdvoldown"
+                android:layout_width="88dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="223dp"
+                android:layout_marginTop="150dp"
+                android:background="@drawable/voldown"
+                android:onClick="dvdvoldown"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="223dp" />
+
+            <Button
+                android:id="@+id/dvdmute"
+                android:layout_width="88dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="223dp"
+                android:layout_marginTop="202dp"
+                android:background="@drawable/rmmute"
+                android:onClick="dvdmute"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="223dp" />
+
+            <Button
+                android:id="@+id/dvdbtn6"
+                android:layout_width="88dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="172dp"
+                android:layout_marginTop="150dp"
+                android:background="@drawable/black6"
+                android:onClick="dvdbtn6"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="172dp" />
+
+            <Button
+                android:id="@+id/dvdbtn9"
+                android:layout_width="88dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="172dp"
+                android:layout_marginTop="202dp"
+                android:background="@drawable/black9"
+                android:onClick="dvdbtn9"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="172dp" />
+
+            <Button
+                android:id="@+id/dvdbtn2"
+                android:layout_width="88dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="119dp"
+                android:layout_marginTop="99dp"
+                android:background="@drawable/black2"
+                android:onClick="dvdbtn2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="119dp" />
+
+            <Button
+                android:id="@+id/dvdbtn0"
+                android:layout_width="88dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="119dp"
+                android:layout_marginTop="254dp"
+                android:background="@drawable/black0"
+                android:onClick="dvdbtn0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="119dp" />
+
+            <Button
+                android:id="@+id/dvdbtnup"
+                android:layout_width="88dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="119dp"
+                android:layout_marginTop="306dp"
+
+                android:background="?attr/actionModeSplitBackground"
+                android:onClick="dvdbtnup"
+                android:text="▲"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="119dp" />
+
+            <Button
+                android:id="@+id/dvdstop"
+                android:layout_width="88dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="172dp"
+                android:layout_marginTop="474dp"
+
+                android:background="@android:color/holo_red_dark"
+                android:onClick="dvdstop"
+                android:text="■"
+                android:textColor="@android:color/background_light"
+
+                android:textSize="30sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="172dp" />
+
+            <Button
+                android:id="@+id/dvdplay"
+                android:layout_width="88dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="119dp"
+                android:layout_marginTop="474dp"
+
+                android:background="@android:color/holo_green_light"
+                android:onClick="dvdplay"
+                android:text="►"
+                android:textColor="@android:color/background_light"
+
+                android:textSize="30sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="119dp" />
+
+            <Button
+                android:id="@+id/dvdpause"
+                android:layout_width="88dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="67dp"
+                android:layout_marginTop="474dp"
+
+                android:background="@android:color/holo_green_light"
+                android:onClick="dvdpause"
+                android:text="▌▌"
+                android:textColor="@android:color/background_light"
+
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="67dp" />
+
+            <Button
+                android:id="@+id/dvdbtndown"
+                android:layout_width="88dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="119dp"
+                android:layout_marginTop="415dp"
+
+                android:background="?attr/actionModeSplitBackground"
+                android:onClick="dvdbtndown"
+                android:text="▼"
+                android:textColor="@android:color/background_light"
+
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="119dp" />
+
+            <Button
+                android:id="@+id/dvdbtnright"
+                android:layout_width="88dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="172dp"
+                android:layout_marginTop="364dp"
+
+                android:background="?attr/actionModeSplitBackground"
+                android:onClick="dvdbtnright"
+                android:text="►"
+                android:textColor="@android:color/background_light"
+
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="172dp" />
+
+            <Button
+                android:id="@+id/dvdbtnleft"
+                android:layout_width="88dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="67dp"
+                android:layout_marginTop="364dp"
+
+                android:background="?attr/actionModeSplitBackground"
+                android:onClick="dvdbtnleft"
+                android:text="◄"
+                android:textColor="@android:color/background_light"
+
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="67dp" />
+
+            <Button
+                android:id="@+id/dvdbtnok"
+                android:layout_width="88dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="119dp"
+                android:layout_marginTop="364dp"
+
+                android:background="?attr/actionModeSplitBackground"
+                android:onClick="dvdbtnok"
+                android:text="OK"
+                android:textColor="@android:color/background_light"
+
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="119dp" />
+
+            <Button
+                android:id="@+id/dvdprev"
+                android:layout_width="88dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="223dp"
+                android:layout_marginTop="474dp"
+
+                android:background="@android:color/holo_purple"
+                android:onClick="dvdprev"
+                android:text="«"
+                android:textColor="@android:color/background_light"
+
+                android:textSize="30sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="223dp" />
+
+            <Button
+                android:id="@+id/dvdnext"
+                android:layout_width="88dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="223dp"
+                android:layout_marginTop="417dp"
+
+                android:background="@android:color/holo_purple"
+                android:onClick="dvdnext"
+                android:text="»"
+                android:textColor="@android:color/background_light"
+
+                android:textSize="30sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="223dp" />
+
+            <Button
+                android:id="@+id/dvdrew"
+                android:layout_width="88dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="223dp"
+                android:layout_marginTop="364dp"
+
+                android:background="@android:color/holo_purple"
+                android:onClick="dvdrew"
+                android:text="◄◄"
+                android:textColor="@android:color/background_light"
+
+                android:textSize="30sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="223dp" />
+
+            <Button
+                android:id="@+id/dvdff"
+                android:layout_width="88dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="223dp"
+                android:layout_marginTop="306dp"
+
+                android:background="@android:color/holo_purple"
+                android:onClick="dvdff"
+                android:text="►►"
+                android:textColor="@android:color/background_light"
+
+                android:textSize="30sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="223dp" />
+
+            <Button
+                android:id="@+id/dvdmenu"
+                android:layout_width="88dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="172dp"
+                android:layout_marginTop="254dp"
+                android:background="@drawable/rmmenu"
+                android:onClick="dvdmenu"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="172dp" />
+
+            <Button
+                android:id="@+id/dvdbtn8"
+                android:layout_width="88dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="119dp"
+                android:layout_marginTop="202dp"
+                android:background="@drawable/black8"
+                android:onClick="dvdbtn8"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="119dp" />
+
+            <Button
+                android:id="@+id/dvdbtn5"
+                android:layout_width="88dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="119dp"
+                android:layout_marginTop="150dp"
+                android:background="@drawable/black5"
+                android:onClick="dvdbtn5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="119dp" />
+
+            <Button
+                android:id="@+id/dvdbtn7"
+                android:layout_width="88dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="67dp"
+                android:layout_marginTop="202dp"
+                android:background="@drawable/black7"
+                android:onClick="dvdbtn7"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="67dp" />
+
+            <Button
+                android:id="@+id/dvdtenup"
+                android:layout_width="88dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="67dp"
+                android:layout_marginTop="254dp"
+                android:background="@drawable/black10"
+                android:onClick="dvdtenup"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="67dp" />
+
+            <Button
+                android:id="@+id/dvdbtn4"
+                android:layout_width="88dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="67dp"
+                android:layout_marginTop="150dp"
+                android:background="@drawable/black4"
+                android:onClick="dvdbtn4"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="67dp" />
+
+            <Button
+                android:id="@+id/dvdbtn1"
+                android:layout_width="88dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="67dp"
+                android:layout_marginTop="99dp"
+                android:background="@drawable/black1"
+                android:onClick="dvdbtn1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="67dp" />
+
+            <Button
+                android:id="@+id/dvdpower"
+                android:layout_width="88dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="67dp"
+                android:layout_marginTop="49dp"
+                android:background="@drawable/power"
+                android:onClick="dvdpower"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="67dp" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/devicescreen"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/remotescreen"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/btndevice3"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="482dp"
+            android:background="@drawable/non"
+            android:gravity="start"
+            android:onClick="btn_device3"
+            android:text="ADD DEVICE 3"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textColor="?android:attr/colorPressedHighlight"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.189"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/btndevice4"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="220dp"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="482dp"
+            android:background="@drawable/non"
+            android:gravity="start"
+            android:onClick="btn_device4"
+            android:text="ADD DEVICE 4"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textColor="?android:attr/colorPressedHighlight"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.873"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/btndevice2"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="220dp"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="362dp"
+            android:background="@drawable/non"
+            android:gravity="start"
+            android:onClick="btn_device2"
+            android:text="ADD DEVICE 2"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textColor="?android:attr/colorPressedHighlight"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.873"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/btndevice1"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="362dp"
+            android:background="@drawable/non"
+            android:gravity="start"
+            android:onClick="btn_device1"
+            android:text="ADD DEVICE 1"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textColor="?android:attr/colorPressedHighlight"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.189"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/btnLight4"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="220dp"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="250dp"
+            android:background="@drawable/non"
+            android:gravity="start"
+            android:onClick="btn_light4"
+            android:text="ADD LIGHT 4"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textColor="?android:attr/colorPressedHighlight"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.88"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/btnLight3"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="250dp"
+            android:background="@drawable/non"
+            android:gravity="start"
+            android:onClick="btn_light3"
+            android:text="ADD LIGHT 3"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textColor="?android:attr/colorPressedHighlight"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.19"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ToggleButton
+            android:id="@+id/toggleButton2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/toggleButton1"
+            android:layout_alignStart="@+id/toggleButton1"
+            android:layout_below="@+id/toggleButton1"
+            android:layout_marginEnd="75dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="75dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/toggle_light"
+            android:text="ToggleButton"
+            android:textOff=""
+            android:textOn=""
+            android:visibility="visible"
+            app:layout_constraintLeft_toRightOf="@+id/toggleButton1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/toggleButton3"
+            android:layout_alignStart="@+id/toggleButton3"
+            android:layout_below="@+id/toggleButton3"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="75dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="75dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/toggle_light"
+            android:text="ToggleButton"
+            android:textOff=""
+            android:textOn=""
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/toggleButton3"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toggleButton2"
+            app:layout_constraintVertical_bias="0.002" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton7"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/toggleButton6"
+            android:layout_alignStart="@+id/toggleButton6"
+            android:layout_below="@+id/toggleButton6"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/toggle_switch"
+            android:text="ToggleButton"
+            android:textOff=""
+            android:textOn=""
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toggleButton5"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton8"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/toggleButton7"
+            android:layout_alignStart="@+id/toggleButton7"
+            android:layout_below="@+id/toggleButton7"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/toggle_switch"
+            android:text="ToggleButton"
+            android:textOff=""
+            android:textOn=""
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.485"
+            app:layout_constraintLeft_toRightOf="@+id/toggleButton7"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toggleButton6"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton6"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/toggleButton5"
+            android:layout_alignStart="@+id/toggleButton5"
+            android:layout_below="@+id/toggleButton5"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="54dp"
+            android:background="@drawable/toggle_switch"
+            android:text="ToggleButton"
+            android:textOff=""
+            android:textOn=""
+            app:layout_constraintHorizontal_bias="0.485"
+            app:layout_constraintLeft_toRightOf="@+id/toggleButton5"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toggleButton4" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton5"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+
+            android:layout_below="@+id/toggleButton4"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="54dp"
+            android:background="@drawable/toggle_switch"
+            android:text="ToggleButton"
+            android:textOff=""
+            android:textOn=""
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toggleButton1" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/toggleButton2"
+            android:layout_alignStart="@+id/toggleButton2"
+            android:layout_below="@+id/toggleButton2"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/toggle_light"
+            android:text="ToggleButton"
+            android:textOff=""
+            android:textOn=""
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/toggle_light"
+            android:text="ToggleButton"
+            android:textOff=""
+            android:textOn=""
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toggleButton3"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Devices Controls"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/btnlight1"
+
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="120dp"
+            android:onClick="btn_light1"
+            android:text="ADD LIGHT 1"
+            android:textAllCaps="true"
+            android:textColor="?android:attr/colorPressedHighlight"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.228"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/btnlight2"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/non"
+            android:gravity="start"
+            android:onClick="btn_light2"
+            android:text="ADD LIGHT 2"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textColor="?android:attr/colorPressedHighlight"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.861"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+  <Button
+      android:id="@+id/btnremote"
+      android:layout_width="140dp"
+      android:layout_height="50dp"
+      android:layout_marginEnd="20dp"
+      android:background="@drawable/remote"
+      android:onClick="btnremote"
+
+      android:layout_marginRight="20dp"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentEnd="true"
+      app:layout_constraintBottom_toBottomOf="parent"
+      android:layout_marginBottom="16dp"
+      app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/btndevices"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="28dp"
+
+        android:layout_marginStart="28dp"
+        android:layout_toEndOf="@+id/devicescreen"
+        android:layout_toRightOf="@+id/devicescreen"
+        android:background="@drawable/devices"
+        android:onClick="btndevices"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/offall"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="28dp"
+
+        android:layout_marginStart="28dp"
+        android:layout_toEndOf="@+id/devicescreen"
+        android:layout_toRightOf="@+id/devicescreen"
+        android:background="@drawable/offall"
+        android:onClick="btnoffall"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
+
+
